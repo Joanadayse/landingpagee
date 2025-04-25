@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casa & Estilo Móveis</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+<link rel="shortcut icon" href="./img/Casa.png" type="image/x-icon">
+
+
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <h1>Casa & Estilo Móveis</h1>
+    </div>
+    <div class="menu">
+      <nav>
+        <ul>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Produtos</a></li>
+          <li><a href="#">Galeria</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  
+
+  <section class="hero">
+    <h2>Seu lar merece mais do que móveis — merece estilo, conforto e personalidade.</h2>
+    <a href="https://wa.me/5599912345678" target="_blank" class="btn-whatsapp">Fale Conosco no WhatsApp</a>
+  </section>
+
+  <section id="sobre" class="sobre">
+    <h2>Sobre Nós</h2>
+    <p>A <strong>Casa & Estilo Móveis</strong> nasceu com o propósito de transformar ambientes com móveis que aliam beleza, qualidade e funcionalidade. Nossa missão é oferecer produtos únicos para deixar cada cantinho da sua casa com a sua cara.</p>
+  </section>
+
+  <section id="produtos" class="produtos">
+    <h2>Produtos em Destaque</h2>
+    <div class="produto-lista">
+      <div class="produto">
+        <img src="./img/imagem (1).jpg" alt="Sofá moderno" />
+        <h3>Sofá Moderno</h3>
+      </div>
+      <div class="produto">
+        <img src="./img/imagem (2).jpg" alt="Estante de Madeira" />
+        <h3>Estante de Madeira</h3>
+      </div>
+      <div class="produto">
+        <img src="./img/imagem (3).jpg" alt="Mesa de Jantar" />
+        <h3>Mesa de Jantar</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria" class="galeria">
+    <h2>Galeria</h2>
+    <div class="galeria-grid">
+      <img src="./img/imagem (5).jpg" alt="Ambiente decorado" />
+      <img src="./img/imagem (5).jpg" alt="Quarto planejado" />
+      <img src="./img/imagem (3).jpg" alt="Sala de estar" />
+    </div>
+  </section>
+
+  <section id="contato" class="contato">
+    <h2>Fale Conosco</h2>
+    
+    <ul class="contato-lista">
+      <li><i class="fas fa-phone-alt"></i> (99) 91234-5678</li>
+      <li><i class="fas fa-envelope"></i> contato@casaeestilomoveis.com.br</li>
+      <li><i class="fas fa-map-marker-alt"></i> Rua da Inspiração, 123 - Centro, Sua Cidade</li>
+    </ul>
+    
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Casa & Estilo Móveis. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const hero = document.querySelector('.hero');
+      let scrollY = window.scrollY;
+  
+      // Movimento sutil de parallax
+      hero.style.backgroundPositionY = `${scrollY * 0.5}px`;
+    });
+  </script>
+  
+
+</body>
+</html>
